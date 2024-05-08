@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'montserrat';
+    color: #fff;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#cursor{
+    height:25px;
+    width:25px;
+    background-color: #2027b5;
+    border-radius: 50%;
+    position:fixed;
+    z-index: 99;
+}
+#blur{
+    height: 400px;
+    width:400px;
+    background-color: #1542e44a;
+    position: fixed;
+    border-radius:50% ;
+    filter: blur(50px);
+    z-index: 9;
+}
+#nav{
+    height: 145px;
+    width:100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    gap:50px;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 99;
+}
+#nav img{
+    height: 100px;
+}
+#nav h4{
+    text-transform: uppercase;
+
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+#main{
+    position: relative;
+    background-color: rgba(58, 53, 53, 0.305);
+
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+     text-align: center;
+     z-index: 10;
+}
+#page1 h1{
+    font-size: 120px;
+    font-weight: 900;
+    position: relative;
+}
+#page1 h1::before{
+    content: "EAT. DRINK.PLAY";
+    position: absolute;
+    color: #000;
+    top : -3px;
+    left: -3px;
+    -webkit-text-stroke: 2px black;
+    z-index: -1;
+}
+#page1 h2{
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+#page1 p{
+    font-size:20px;
+    font-weight: 500;
+    width: 500px;
+    font-style: italic;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: #4e4b4b; */
+    z-index: 10;
+}
+#side{
+    /* display: none; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+    
+}
+#side::-webkit-scrollbar{
+    display: none;
+}
+#side1{
+    display:inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 20s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+
+
+#side h4{
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 120px;
+    font-weight: 900;
+    font-family: gilroy;
+    margin-right:10px;
+    transition: all linear 0.5s;
+    color:transparent;
+    -webkit-text-stroke: 2px rgb(34, 52, 222);
+}
+#side h4:hover{
+    color:rgb(34, 52, 222)
+}
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(-100%);
+    }
+    
+}
+#about-us {
+    height: 40vh;
+    width:100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+#about-us img{
+    height :300px;
+    width:300px;
+    border-radius: 10%;
+    position: relative;
+    z-index: 10;
+    object-fit: cover;
+}
+#about-us-in{
+    width: 50%;
+    text-align: center;
+}
+#about-us-in h3{
+    font-size:55px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+#about-us-in p{
+    font-size: 25px;
+    line-height: 30px;
+
+}
+#cards-contain{
+    /* background-color: #ff0000; */
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 70px;
+    /* z-index: 10; */
+}
+.cards{
+    height: 80%;
+    width: 24%;
+    /* background-color: blue; */
+     border-radius: 30px;
+     background-size: cover;
+     background-position: center;
+     z-index: 10;
+
+}
+#card1{
+    background-image: url(/1413542205427_wps_38_Manchester_City_FC_via_Pr.jpg);
+    /* z-index: 10; */
+}
+#card2{
+    background-image: url(/AP19241537288261.avif);
+    /* z-index: 10; */
+}
+#card3{
+    background-image: url(/stock-photo-teenagers-on-soccer-training-camp-boys-practice-football-with-young-coaches-junior-level-athletes-1806669748.jpg);
+    /* z-index: 10; */
+}
+.overview{
+    height: 100%;
+    width:100%;
+    background-color: #95C11E;
+    padding-top: 160px;
+
+}
+.overview h4{
+    background-color: #000;
+}
